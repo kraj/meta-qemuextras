@@ -7,4 +7,9 @@ revision: HEAD
 Send pull requests to openembedded-devel@lists.openembedded.org
 prefix it with [meta-qemuextra]
 
+For qemumips64 currently linux-yocto 3.8 is used but defaults in OE-Core 
+is 3.4 so add following to your local.conf or distro config file
+
+PREFERRED_VERSION_linux-yocto_qemumips64 ?= "3.8%"
+
 Layer maintainers: Khem Raj <raj.khem@gmail.com>
